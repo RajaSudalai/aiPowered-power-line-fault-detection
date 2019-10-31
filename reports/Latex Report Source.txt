@@ -270,7 +270,13 @@ Training dataset is used for training the model and evaluation of the model perf
       Computational models of neural networks have been around for a long time. Neural networks are made up of a number of layers with each layer connected to the other layers forming the network.\par
 In our problem, there are 8712 signals, each of which comprises of 8,00,000 data points and belong to any of 3 phases 0,1,2. Each signal is divided in to 160 buckets of 5000 data points. Then for each bucket, the 13 statistical features are calculated.  Totally there are 39 features including all the 3 phases. This is to create a 2-dimensional input shape for the deep learning algorithms\par
 This data is fed into CNN deep learning model for prediction a new signal as PD Fault or PD free. There are 3 convolutions filters of sizes (48,64 and 128), followed by Max pooling and dropout to achieve dimensionality reduction and regularization respectively. 2 dense layers are used with output size of 128 and 256 with non-linear activation function Relu. Sigmoid is used for the final layer as it is a binary class prediction\par
-CNN with fine-tuned parameters produced the result with AUC score of 0.9022 with Accuracy of 0.9587 for test dataset.  
+CNN with fine-tuned parameters produced the result with AUC score of 0.9022 with Accuracy of 0.9587 for test dataset. 
+
+ \begin{figure}[H]
+          \centering
+         \includegraphics[width= 1.0\linewidth]{CNN_Summary}
+         \caption{\textbf{CNN Summary}}
+  \end{figure}
 
  \begin{figure}[H]
           \centering
