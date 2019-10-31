@@ -1,0 +1,1 @@
+conda create -n issmCA3aiVoyagers python tensorflow keras tsfresh scikit-learn tqdm joblib lightgbm seaborn pandas numpy scipy  librosa pywavelets matplotlib spyder jupyter tensorflow-gpu numba pyarrow scikit-plot
